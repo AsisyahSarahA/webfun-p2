@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Registrasi</title>
+    <!-- link font -->
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .borderContainer {
+        margin: 100px auto;
+        background-color:wheat;
+        width: 400px;
+        padding: 20px;
+        border-radius: 25px;
+    }
+     .titleForm {
+        text-align: center;
+        font-weight: bold;
+        background-color: lemonchiffon;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .formContent {
+        padding: 10px;
+    }
+
+    .label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    .inputForm {
+        width: 100%;
+        /* height: 25px; */
+        border-radius: 5px;
+        background-color:cornsilk;
+        border: 2px solid #AC1754;
+        padding: 10px;
+    }
+    .btn-login {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .btn-reset {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    body{
+        font-family: 'Poppins', sans-serif;
+        color: #690B22;
+        width: 100vw;
+        height: 100vh;
+        position:fixed;
+    }
+</style>
+<body>
+    <div class="borderContainer">
+        <div>
+        <center><img src="img/3135715.png" alt="Human Login" style="width: 25%;" ></center>
+        <div class="titleForm">Login</div>
+            <div class="formContent">
+                <div class="formContainer">
+                    <form action="success.html">
+                        <div style="margin-bottom: 10px;">
+                            <label class="label" for="name">Nama Lengkap</label>
+                            <input type="text" id="name" class="inputForm" name="name" placeholder="Masukkan Nama Lengkap disini...">
+                        </div>
+
+                        <!-- Email -->
+                        <div style="margin-bottom: 10px;">
+                            <label class="label" for="email">Email</label>
+                            <input type="email" id="email" class="inputForm" name="email" placeholder="Masukkan Email disini...">
+                        </div>
+
+                        <!-- Password -->
+                        <div style="margin-bottom: 10px;">
+                            <label class="label" for="password">Password</label>
+                            <input type="password" id="password" class="inputForm" name="password" placeholder="Masukkan Password disini...">
+                        </div>
+
+                        <!-- checkbox -->
+                        <div style="margin-bottom: 10px;">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Ingat saya</label>
+                        </div>
+                        <center>
+                            <button class="btn-login" type="submit">Login</button>
+                            <button class="btn-reset" type="reset">
+                                <a href="index.html" style="color: white; text-decoration: none;" >Kembali</a>
+                            </button>
+                        </center>   
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
